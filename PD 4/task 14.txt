@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+void printMenu();
+void calculateAggregate(string name,int matricMarks,int interMarks,int ecatMarks);
+void compareMarks(string nameStd1,int ecatMarksStd1,string nameStd2,int ecatMarksStd2);
+int main(){
+string name;
+int matricMarks,interMarks,ecatMarks,ecatMarksStd1,ecatMarksStd2;
+string nameStd1,nameStd2,
+cout<<"ENter your name :";
+cin>>name;
+cout<<"Enter matric marks :";
+cin>>matrcMarks;
+cout<<"Enter inter marks :";
+cin>>interMarks;
+cout<<"Enter ecat marks :";
+cin>>ecatMarks;
+printMenu();
+calculateAggregate(name,matricMarks,interMarks,ecatMarks);
+compareMarks(nameStd1,ecatMarksStd1,nameStd2,ecatMarksStd2);
+}
+void printMenu(){
+cout<<"#############################################"<<endl;
+cout<<"#   ####################################    #"<<endl;
+cout<<"#           ##################              #"<<endl;
+cout<<"#   UNIVERSITY ADMISSION MANAGEMENT SYSTEM  #"<<endl;
+cout<<"#                                           #"<<endl;
+cout<<"#                                           #"<<endl;
+cout<<"#                                           #"<<endl;
+cout<<"#############################################"<<endl;
+}
+void calculateAggregate(string name,int matricMarks,int interMarks,int ecatMarks){
+   float aggregate=(matricMarks/1100)*30+(interMarks/500)*30+(ecatMarks/400)*40;
+   cout<<"Total Aggregate :"<<aggregate;
+}
+void compareMarks(string nameStd1,int ecatMarksStd1,string nameStd2,int ecatMarksStd2){
+   if(ecatMarksStd1>ecatMarksStd2){
+        cout<<"Student 1 RollNo :"<<ecatMarksStd1;
+}
+   if(ecatMarksStd1<ecatMarksStd2){
+        cout<<"Student 2 RollNo :"<<ecatMarksStd2;
+}
+}

@@ -1,45 +1,55 @@
 #include<iostream>
-#include<windows.h>
 using namespace std;
-void gotoxy(int,int);
-void nameA();
-void nameW();
-void nameAA();
-void nameI();
-void nameS();
-main()
-{
- system("cls");
- nameA();
- nameW();
- nameAA();
- nameI();
- nameS();
+void A();
+void W();
+void I();
+void S();
+int main(){
+	system("cls");
+	A();
+	cout<<endl;
+	W();
+	cout<<endl;
+	A();
+	cout<<endl;
+	I();
+	cout<<endl;
+	S();
 }
-void gotoxy(int x,int y){
-COORD coordinates;
-coordinates.X=x;
-coordinates.Y=y;
-SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinates);
+void A(){
+	cout<<"            AA       "<<endl;
+	cout<<"          AA  AA     "<<endl;
+	cout<<"         AA    AA    " <<endl;
+	cout<<"        AA  AA  AA   "<<endl;
+	cout<<"       AA        AA  "<<endl;
+	cout<<"      AA          AA "<<endl;
+	cout<<"     AA            AA"<<endl;
 }
-void nameA(){
-  gotoxy(8,5);
-  cout<<" A ";
+void W(){
+	cout<<"  WW                        WW"<<endl;
+	cout<<"   WW                      WW "<<endl;
+	cout<<"    WW                    WW  "<<endl;
+	cout<<"     WW      WW  WW      WW   "<<endl;
+	cout<<"      WW   WW      WW   WW    "<<endl;
+	cout<<"        WW            WW      "<<endl;
 }
-void nameW(){
- gotoxy(8,6);
-   cout<<" W ";
+void I(){
+	cout<<"        IIII"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"         II"<<endl;
+	cout<<"        IIII"<<endl;
 }
-void nameAA(){
- gotoxy(8,7);
- cout<<" A ";
+void S(){
+	cout<<"        SS          "<<endl;
+	cout<<"     SS     SS      "<<endl;
+	cout<<"     S              "<<endl;
+	cout<<"       SS           "<<endl;
+	cout<<"            SS      "<<endl;
+	cout<<"     SS       S     "<<endl;
+	cout<<"      S     SS      "<<endl;
+	cout<<"         SS          "<<endl;
 }
-void nameI(){
-   gotoxy(8,8);
-   cout<<" I ";
-}
-void nameS(){
-  gotoxy(8,9);
-   cout<<" S ";
-}
-
